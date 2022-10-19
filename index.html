@@ -1,128 +1,72 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneWorkingFox</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulating the DOM</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
+  <body>
     <header class="page__header">
-        <nav class="navbar__menu">
-            <ul id="navbar__list"></ul>
-        </nav>
+      <nav class="navbar__menu">
+        <ul id="navbar__list"></ul>
+      </nav>
     </header>
     <main>
-        <header class="main__hero">
-            <h1>Landing Page</h1>
-        </header>
-        <section id="section1" class="active_section">
-            <div class="landing__container">
-                <h2>Section 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section2">
-            <div class="landing__container">
-                <h2>Section 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section3">
-            <div class="landing__container">
-                <h2>Section 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section4">
-            <div class="landing__container">
-                <h2>Section 4</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section5">
-            <div class="landing__container">
-                <h2>Section 5</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section6">
-            <div class="landing__container">
-                <h2>Section 6</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section7">
-            <div class="landing__container">
-                <h2>Section 7</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section8">
-            <div class="landing__container">
-                <h2>Section 8</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section9">
-            <div class="landing__container">
-                <h2>Section 9</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
-        <section id="section10">
-            <div class="landing__container">
-                <h2>Section 10</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci
-                    eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam
-                    in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-                <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet
-                    porttitor tortor, eget elementum tortor mollis non.</p>
-            </div>
-        </section>
+      <header class="main__hero">
+        <h1>Support Information</h1>
+      </header>
+      <section id="section1" class="active_section">
+        <div class="landing__container">
+          <h2>ShoppingFoxList</h2>
+          <p>
+            <h3>Goal</h3>
+           <p>The application allows users to easily organise their shopping lists. It supports light and dark mode
+             depending on the settings of the phone.
+           </p>
+            <br>
+            <h3>Requirements to install</h3>
+            <p>iPhone iOS 15.0</p>
+            <br>
+            <h3>Functionality</h3>
+            <ul>
+              <li><h4>Light and Dark Modes</h4></li>
+              <img src="images/lists_light_mode.png" alt="lists light mode"  height="500">
+              <img src="images/lists_dark_mode.png" alt="lists dark mode"  height="500" style="padding-left: 10px;">
+                <li><h4>Creating, editing and deleting lists</h4></li>
+                <img src="images/create_new_list_light_mode.png" alt="create new list light mode"  height="500">
+                <img src="images/edit_list_light_mode.png" alt="edit list light mode"  height="500" style="padding-left: 10px;">
+                <img src="images/delete_list_light_mode.png" alt="delete list light mode"  height="500" style="padding-left: 10px;">
+                <li><h4>Creating and deleting items in each list</h4></li>
+                <img src="images/create_items_light_mode.png" alt="create items light mode"  height="500">
+                <img src="images/delete_items_light_mode.png" alt="delete items light mode"  height="500" style="padding-left: 10px;">
+                <li><h4>Editing items</h4></li>
+                <img src="images/edit_items_light_mode.png" alt="edit items light mode"  height="500">
+                <li><h4>Filtering and displaying properties of each item</h4></li>
+                <img src="images/filter_light_mode.png" alt="filter light mode"  height="500" style="padding-left: 10px;">
+                <img src="images/display_properties_light_mode.png" alt="display properties light mode"  height="500" style="padding-left: 10px;">
+                <li><h4>Additng and deleting values of item properties</h4></li>
+                <img src="images/add_new_category_light_mode.png" alt="add new category light mode"  height="500">
+                <img src="images/delete_category_light_mode.png" alt="delete category light mode"  height="500" style="padding-left: 10px;">
+                <li><h4>Changing the status of each item to be checked/unchecked</h4></li>
+                <img src="images/checked_item_light_mode.png" alt="checked item light mode"  height="500">
+                <img src="images/unchecked_item_light_mode.png" alt="unchecked item light mode"  height="500" style="padding-left: 10px;">
+            </ul>
+            <br>
+          </p>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="landing__container">
+            <h2>Contact</h2>
+            <p>For any enquiries, please contact us at: oneworkingfox@gmail.com</p>
+        </div>
+    </section>
     </main>
     <footer class="page__footer">
-        <p>&copy2021</p>
+      <p>&copyOneWorkingFox 2022</p>
     </footer>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>
