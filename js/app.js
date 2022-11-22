@@ -41,14 +41,16 @@ function createLink(i) {
   let aHref = document.createElement('a');
   const hrefSection = '#section' + i;
   aHref.href = hrefSection;
-  if(i == 1){
+  if (i == 1) {
     aHref.innerHTML = 'ShoppingFoxList';
-  }else if(i == 2){
+  } else if (i == 2) {
+    aHref.innerHTML = 'Codace';
+  } else if (i == 3) {
     aHref.innerHTML = 'Contact';
-  }else{
+  } else {
     aHref.innerHTML = 'Section ' + i;
   }
-  
+
   return aHref;
 }
 
